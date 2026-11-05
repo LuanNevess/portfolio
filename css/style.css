@@ -1839,8 +1839,9 @@ img {
     }
 
     /* O header usa backdrop-filter, que vira o "containing block" de elementos fixed.
-       Por isso o menu é escondido com transform (top: -100% não funcionaria). */
+       Por isso o menu permanece oculto com display: none até receber .show-menu. */
     .nav__menu {
+        display: none;
         position: fixed;
         top: 0;
         left: 0;
@@ -1851,6 +1852,7 @@ img {
         border-bottom: 1px solid var(--border-color);
         transform: translateY(-100%);
         visibility: hidden;
+        pointer-events: none;
         transition: transform var(--transition-base), visibility var(--transition-base);
         z-index: 100;
     }
@@ -1866,8 +1868,15 @@ img {
     }
 
     .nav__menu.show-menu {
+        display: block;
         transform: translateY(0);
         visibility: visible;
+        pointer-events: auto;
+    }
+
+    .code-box__body {
+        white-space: pre-wrap;
+        word-break: break-word;
     }
 
     .nav__list {

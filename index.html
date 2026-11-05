@@ -19,8 +19,23 @@
     <!-- Lucide Icons CDN -->
     <script src="https://unpkg.com/lucide@latest"></script>
 
-    <!-- Stylesheet -->
-    <link rel="stylesheet" href="css/style.css">
+    <!-- Stylesheet (com cache-busting para atualização imediata no mobile) -->
+    <link rel="stylesheet" href="css/style.css?v=20261105">
+    <style>
+        html, body { max-width: 100%; overflow-x: hidden; }
+        .hero__container > *, .about__container > * { min-width: 0; max-width: 100%; }
+        @media screen and (max-width: 992px) {
+            .hero__container, .about__container { grid-template-columns: minmax(0, 1fr) !important; }
+        }
+        @media screen and (max-width: 768px) {
+            .nav__menu:not(.show-menu) { display: none !important; visibility: hidden !important; pointer-events: none !important; }
+            .nav__menu.show-menu { display: block !important; transform: translateY(0) !important; visibility: visible !important; pointer-events: auto !important; }
+            .code-box__body { white-space: pre-wrap !important; word-break: break-word !important; }
+        }
+        @media screen and (max-width: 480px) {
+            .hero { padding-top: calc(var(--header-height) + 1.75rem) !important; }
+        }
+    </style>
 </head>
 
 <body>
@@ -888,8 +903,8 @@
     </footer>
 
     <!-- Scripts -->
-    <script src="js/projects-data.js"></script>
-    <script src="js/main.js"></script>
+    <script src="js/projects-data.js?v=20261105"></script>
+    <script src="js/main.js?v=20261105"></script>
 </body>
 
 </html>
