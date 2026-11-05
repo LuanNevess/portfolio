@@ -1,0 +1,889 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Portfólio de Luan Vitor Neves Gonçalves — Estudante de Sistemas de Informação no IF Sudeste MG, Desenvolvedor Web com JavaScript, Node.js, Python, automação e projetos de acessibilidade.">
+    <meta name="author" content="Luan Vitor Neves Gonçalves">
+    <title>Luan Neves | Sistemas de Informação & Desenvolvimento Web</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap"
+        rel="stylesheet">
+
+    <!-- Lucide Icons CDN -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- ==================== HEADER & NAVBAR ==================== -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#home" class="nav__logo">
+                <span class="logo__symbol">&lt;LN /&gt;</span>
+                <span class="logo__text">Luan<span class="highlight">Neves</span></span>
+            </a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link active-link">Início</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">Sobre</a></li>
+                    <li class="nav__item"><a href="#skills" class="nav__link">Habilidades</a></li>
+                    <li class="nav__item"><a href="#projects" class="nav__link">Projetos</a></li>
+                    <li class="nav__item"><a href="#education" class="nav__link">Formação</a></li>
+                    <li class="nav__item"><a href="#contact" class="nav__link">Contato</a></li>
+                </ul>
+
+                <div class="nav__close" id="nav-close">
+                    <i data-lucide="x"></i>
+                </div>
+            </div>
+
+            <div class="nav__actions">
+                <!-- Theme switcher button -->
+                <button class="theme-toggle" id="theme-toggle" aria-label="Alternar tema claro/escuro">
+                    <i data-lucide="moon" id="theme-icon"></i>
+                </button>
+
+                <a href="assets/docs/curriculo.pdf" download="Curriculo_Luan_Neves.pdf" target="_blank"
+                    class="btn btn--sm btn--outline nav__cv-btn" title="Baixar Currículo em PDF">
+                    <i data-lucide="file-down"></i> Currículo
+                </a>
+
+                <a href="#contact" class="btn btn--sm btn--primary nav__cta">Fale Comigo</a>
+
+                <div class="nav__toggle" id="nav-toggle" aria-label="Abrir menu">
+                    <i data-lucide="menu"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main">
+
+        <!-- ==================== HERO SECTION ==================== -->
+        <section class="hero section" id="home">
+            <div class="hero__container container grid">
+                <div class="hero__data">
+                    <div class="hero__badge">
+                        <span class="badge__dot"></span>
+                        <span>Disponível para Estágio &amp; Projetos</span>
+                    </div>
+
+                    <h1 class="hero__title">
+                        Luan Vitor <span class="gradient-text">Neves Gonçalves</span>
+                    </h1>
+
+                    <p class="hero__subtitle"
+                        style="font-family: var(--font-mono); font-size: 1.05rem; color: var(--accent-cyan); margin-bottom: 1rem; font-weight: 600;">
+                        Sistemas de Informação • IF Sudeste MG • Desenvolvedor Web
+                    </p>
+
+                    <p class="hero__description">
+                        Graduando em <strong>Sistemas de Informação</strong> pelo IF Sudeste MG. Experiência prática no
+                        desenvolvimento de sistemas web com <strong>JavaScript, Node.js, Python e HTML/CSS</strong>,
+                        automação de busca de dados e projetos de inclusão digital e tecnologias assistivas com foco em
+                        impacto real.
+                    </p>
+
+                    <div class="hero__actions">
+                        <a href="#projects" class="btn btn--primary">
+                            <i data-lucide="folder-kanban"></i> Ver Projetos
+                        </a>
+                        <a href="assets/docs/curriculo.pdf" download="Curriculo_Luan_Neves.pdf" target="_blank"
+                            class="btn btn--outline" id="cv-btn">
+                            <i data-lucide="file-down"></i> Baixar Currículo (PDF)
+                        </a>
+                    </div>
+
+                    <div class="hero__socials">
+                        <span class="socials__label">Conecte-se:</span>
+                        <a href="https://github.com/LuanNevess" target="_blank" rel="noopener noreferrer"
+                            class="social__link" aria-label="GitHub" title="GitHub">
+                            <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" />
+                            </svg>
+                        </a>
+                        <a href="https://linkedin.com/in/luan-neves-700a7933a" target="_blank" rel="noopener noreferrer"
+                            class="social__link" aria-label="LinkedIn" title="LinkedIn">
+                            <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true">
+                                <path
+                                    d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9v8.37H9.2V10.9H6.46M7.83 6.45a1.64 1.64 0 1 0 0 3.28 1.64 1.64 0 0 0 0-3.28z" />
+                            </svg>
+                        </a>
+                        <a href="mailto:luanvitor.neves0@gmail.com" class="social__link" aria-label="Gmail"
+                            title="Gmail">
+                            <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true">
+                                <path
+                                    d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z" />
+                            </svg>
+                        </a>
+                        <a href="https://wa.me/5532998396201" target="_blank" rel="noopener noreferrer"
+                            class="social__link" aria-label="WhatsApp" title="WhatsApp">
+                            <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true">
+                                <path
+                                    d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Hero Interactive Visual / KPI Widget -->
+                <div class="hero__visual">
+                    <div class="tech-card tech-card--hero">
+                        <div class="tech-card__header">
+                            <div class="window-dots">
+                                <span class="dot dot--red"></span>
+                                <span class="dot dot--yellow"></span>
+                                <span class="dot dot--green"></span>
+                            </div>
+                            <span class="tech-card__tag">developer_profile.py</span>
+                        </div>
+
+                        <div class="hero-stats__grid">
+                            <div class="stat-box">
+                                <div class="stat-box__icon"><i data-lucide="graduation-cap"></i></div>
+                                <div class="stat-box__info">
+                                    <span class="stat-box__number">IF Sudeste MG</span>
+                                    <span class="stat-box__label">Sistemas de Informação</span>
+                                </div>
+                            </div>
+                            <div class="stat-box">
+                                <div class="stat-box__icon"><i data-lucide="code-2"></i></div>
+                                <div class="stat-box__info">
+                                    <span class="stat-box__number">JavaScript &amp; Node</span>
+                                    <span class="stat-box__label">Full Stack &amp; APIs</span>
+                                </div>
+                            </div>
+                            <div class="stat-box">
+                                <div class="stat-box__icon"><i data-lucide="terminal"></i></div>
+                                <div class="stat-box__info">
+                                    <span class="stat-box__number">Python &amp; SQL</span>
+                                    <span class="stat-box__label">Automação &amp; Dados</span>
+                                </div>
+                            </div>
+                            <div class="stat-box">
+                                <div class="stat-box__icon"><i data-lucide="map-pin"></i></div>
+                                <div class="stat-box__info">
+                                    <span class="stat-box__number">Juiz de Fora - MG</span>
+                                    <span class="stat-box__label">Disponível para Estágio</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Code Preview / Tech Highlight -->
+                        <div class="hero-code-box">
+                            <div class="code-box__header">
+                                <span class="code-box__lang"><i data-lucide="terminal"></i> luan_config.py</span>
+                                <span class="code-box__badge"><span class="badge__dot"></span> ativo</span>
+                            </div>
+                            <pre class="code-box__body"><code><span class="c-kw">class</span> <span class="c-cls">LuanNeves</span>:
+    education = <span class="c-str">"BSI - IF Sudeste MG (2023-Atual)"</span>
+    stack = [<span class="c-str">"JavaScript"</span>, <span class="c-str">"Node.js"</span>, <span class="c-str">"Python"</span>, <span class="c-str">"SQL"</span>, <span class="c-str">"Power BI"</span>]
+    design_tools = [<span class="c-str">"Figma"</span>, <span class="c-str">"SolidWorks"</span>, <span class="c-str">"IA Generativa"</span>]
+    experiences = [<span class="c-str">"Pesquisa Acadêmica"</span>, <span class="c-str">"Inclusão Digital"</span>, <span class="c-str">"Órteses 3D"</span>]
+    status = <span class="c-str">"Disponível para Estágio / Oportunidades Dev"</span></code></pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ==================== ABOUT SECTION ==================== -->
+        <section class="about section" id="about">
+            <div class="container">
+                <div class="section__header">
+                    <span class="section__subtitle">Perfil Profissional</span>
+                    <h2 class="section__title">Sobre Mim & Trajetória</h2>
+                </div>
+
+                <div class="about__container grid">
+                    <div class="about__content">
+                        <h3 class="about__heading">
+                            Estudante de Sistemas de Informação no IF Sudeste MG com foco em Desenvolvimento Web,
+                            Automação e Tecnologia Assistiva.
+                        </h3>
+                        <p class="about__text">
+                            Graduando em <strong>Sistemas de Informação</strong> pelo <strong>Instituto Federal do
+                                Sudeste de Minas Gerais (Campus Juiz de Fora)</strong>. Possuo perfil proativo,
+                            raciocínio analítico estruturado e facilidade para aprender novas tecnologias, aplicando
+                            código limpo para solucionar demandas reais de forma prática.
+                        </p>
+                        <p class="about__text">
+                            Minha atuação prática abrange o <strong>Desenvolvimento Web moderno (JavaScript, Node.js,
+                                Python, HTML5, CSS3, SQL)</strong>, a criação de <strong>automações
+                                inteligentes</strong> (como mecanismos de busca e filtragem de artigos científicos e
+                            scrapers assíncronos), prototipagem UI/UX no <strong>Figma</strong> e projetos com forte
+                            impacto social e de inclusão — desde a capacitação de idosos em segurança digital até a
+                            modelagem 3D de órteses assistivas no <strong>SolidWorks</strong>.
+                        </p>
+
+                        <div class="about__highlights">
+                            <div class="highlight-item">
+                                <div class="highlight-item__icon"><i data-lucide="check-circle-2"></i></div>
+                                <div>
+                                    <strong>Pensamento Analítico & Lógica:</strong> Resolução pragmática de problemas
+                                    com decomposição de requisitos e arquitetura estruturada.
+                                </div>
+                            </div>
+                            <div class="highlight-item">
+                                <div class="highlight-item__icon"><i data-lucide="check-circle-2"></i></div>
+                                <div>
+                                    <strong>Desenvolvimento Web & Automação:</strong> Construção de interfaces
+                                    responsivas, APIs eficientes e rotinas automatizadas em Python.
+                                </div>
+                            </div>
+                            <div class="highlight-item">
+                                <div class="highlight-item__icon"><i data-lucide="check-circle-2"></i></div>
+                                <div>
+                                    <strong>Acessibilidade & Tecnologia Assistiva:</strong> Experiência com inclusão
+                                    digital na terceira idade e prototipagem física 3D.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div style="margin-top: 2rem;">
+                            <a href="assets/docs/curriculo.pdf" download="Curriculo_Luan_Neves.pdf" target="_blank"
+                                class="btn btn--primary">
+                                <i data-lucide="file-down"></i> Baixar Currículo Completo (PDF)
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="about__pillars">
+                        <div class="pillar-card">
+                            <div class="pillar-card__icon"><i data-lucide="code-2"></i></div>
+                            <h4>Desenvolvimento Web & APIs</h4>
+                            <p>Construção de aplicações web responsivas, interfaces acessíveis e serviços backend
+                                integrando JavaScript, Node.js, Python e banco de dados relacional SQL.</p>
+                            <span class="pillar-card__tags">JavaScript • Node.js • Python • HTML5 / CSS3 • SQL</span>
+                        </div>
+
+                        <div class="pillar-card">
+                            <div class="pillar-card__icon"><i data-lucide="bot"></i></div>
+                            <h4>Automação & Processamento</h4>
+                            <p>Automação de rotinas e tratamento de dados: motor de busca e filtragem de artigos
+                                científicos, web scraping e bots orientados a eventos.</p>
+                            <span class="pillar-card__tags">Python • Web Scraping • Automações • Lógica
+                                Algorítmica</span>
+                        </div>
+
+                        <div class="pillar-card">
+                            <div class="pillar-card__icon"><i data-lucide="box"></i></div>
+                            <h4>Prototipação, 3D & Acessibilidade</h4>
+                            <p>Design de interfaces com foco no usuário no Figma, modelagem paramétrica 3D no SolidWorks
+                                para órteses assistivas e projetos de inclusão digital.</p>
+                            <span class="pillar-card__tags">Figma • SolidWorks • Impressão 3D • Acessibilidade</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ==================== SKILLS SECTION ==================== -->
+        <section class="skills section" id="skills">
+            <div class="container">
+                <div class="section__header">
+                    <span class="section__subtitle">Minhas Ferramentas & Competências</span>
+                    <h2 class="section__title">Stack Tecnológico & Habilidades</h2>
+                    <p class="section__description">
+                        Conhecimentos técnicos e comportamentais desenvolvidos na graduação em Sistemas de Informação
+                        (IF Sudeste MG) e em projetos práticos.
+                    </p>
+                </div>
+
+                <!-- Skill Filter Tabs -->
+                <div class="skills__tabs">
+                    <button class="skills__tab active" data-filter="all">Todas</button>
+                    <button class="skills__tab" data-filter="web">Web & Backend</button>
+                    <button class="skills__tab" data-filter="languages">Linguagens & Banco</button>
+                    <button class="skills__tab" data-filter="design">Design, 3D & Ferramentas</button>
+                    <button class="skills__tab" data-filter="behavioral">Comportamentais</button>
+                </div>
+
+                <div class="skills__grid" id="skills-container">
+                    <!-- WEB & BACKEND -->
+                    <div class="skill-card" data-category="web">
+                        <div class="skill-card__header">
+                            <i data-lucide="code" class="skill-icon text-cyan"></i>
+                            <span class="skill-level">Avançado</span>
+                        </div>
+                        <h4 class="skill-card__title">JavaScript (ES6+)</h4>
+                        <p class="skill-card__desc">Desenvolvimento web dinâmico, manipulação avançada de DOM,
+                            requisições assíncronas (Fetch / Async-Await), lógica funcional e moderna.</p>
+                    </div>
+
+                    <div class="skill-card" data-category="web">
+                        <div class="skill-card__header">
+                            <i data-lucide="server" class="skill-icon text-cyan"></i>
+                            <span class="skill-level">Intermediário</span>
+                        </div>
+                        <h4 class="skill-card__title">Node.js</h4>
+                        <p class="skill-card__desc">Construção de aplicações no servidor, ecossistema npm, APIs RESTful,
+                            manipulação de arquivos e integração com banco de dados.</p>
+                    </div>
+
+                    <div class="skill-card" data-category="web">
+                        <div class="skill-card__header">
+                            <i data-lucide="layout" class="skill-icon text-cyan"></i>
+                            <span class="skill-level">Avançado</span>
+                        </div>
+                        <h4 class="skill-card__title">HTML5 & CSS3 Moderno</h4>
+                        <p class="skill-card__desc">Semântica estrutural, design responsivo mobile-first, Flexbox, CSS
+                            Grid, estilização avançada e princípios de acessibilidade web.</p>
+                    </div>
+
+                    <!-- LINGUAGENS & BANCO -->
+                    <div class="skill-card" data-category="languages">
+                        <div class="skill-card__header">
+                            <i data-lucide="terminal" class="skill-icon text-emerald"></i>
+                            <span class="skill-level">Avançado</span>
+                        </div>
+                        <h4 class="skill-card__title">Python</h4>
+                        <p class="skill-card__desc">Automação de processos, scripts para busca e filtragem de artigos
+                            científicos, web scraping, bots e processamento lógico.</p>
+                    </div>
+
+                    <div class="skill-card" data-category="languages">
+                        <div class="skill-card__header">
+                            <i data-lucide="database" class="skill-icon text-emerald"></i>
+                            <span class="skill-level">Intermediário / Avançado</span>
+                        </div>
+                        <h4 class="skill-card__title">SQL & Banco de Dados</h4>
+                        <p class="skill-card__desc">Modelagem relacional de dados, criação de esquemas, consultas
+                            otimizadas, joins, filtros, agrupamentos e integridade referencial.</p>
+                    </div>
+
+                    <div class="skill-card" data-category="languages">
+                        <div class="skill-card__header">
+                            <i data-lucide="bar-chart-2" class="skill-icon text-emerald"></i>
+                            <span class="skill-level">Intermediário</span>
+                        </div>
+                        <h4 class="skill-card__title">Power BI</h4>
+                        <p class="skill-card__desc">Modelagem de dados, fórmulas e medidas DAX, tratamento com Power Query, design de relatórios executivos e análise de KPIs.</p>
+                    </div>
+
+                    <div class="skill-card" data-category="languages">
+                        <div class="skill-card__header">
+                            <i data-lucide="cpu" class="skill-icon text-emerald"></i>
+                            <span class="skill-level">Sólido</span>
+                        </div>
+                        <h4 class="skill-card__title">Java & C</h4>
+                        <p class="skill-card__desc">Fundamentos de Programação Orientada a Objetos (POO), estruturas de
+                            dados fundamentais, tipagem estática e algoritmos eficientes.</p>
+                    </div>
+
+                    <!-- DESIGN, 3D & FERRAMENTAS -->
+                    <div class="skill-card" data-category="design">
+                        <div class="skill-card__header">
+                            <i data-lucide="figma" class="skill-icon text-purple"></i>
+                            <span class="skill-level">Avançado</span>
+                        </div>
+                        <h4 class="skill-card__title">Figma (UI / UX)</h4>
+                        <p class="skill-card__desc">Prototipação de interfaces, criação de telas de alta e baixa
+                            fidelidade, fluxos de navegação e design centrado na experiência do usuário.</p>
+                    </div>
+
+                    <div class="skill-card" data-category="design">
+                        <div class="skill-card__header">
+                            <i data-lucide="box" class="skill-icon text-purple"></i>
+                            <span class="skill-level">Prático</span>
+                        </div>
+                        <h4 class="skill-card__title">SolidWorks & Impressão 3D</h4>
+                        <p class="skill-card__desc">Modelagem paramétrica 3D, prototipagem e desenvolvimento de órteses
+                            assistivas para tecnologia assistiva e acessibilidade motora.</p>
+                    </div>
+
+                    <div class="skill-card" data-category="design">
+                        <div class="skill-card__header">
+                            <i data-lucide="git-branch" class="skill-icon text-purple"></i>
+                            <span class="skill-level">Avançado</span>
+                        </div>
+                        <h4 class="skill-card__title">Git & GitHub</h4>
+                        <p class="skill-card__desc">Versionamento de código, fluxo de commits, branches, pull requests e
+                            documentação de projetos em repositórios abertos.</p>
+                    </div>
+
+                    <div class="skill-card" data-category="design">
+                        <div class="skill-card__header">
+                            <i data-lucide="sparkles" class="skill-icon text-purple"></i>
+                            <span class="skill-level">Prático</span>
+                        </div>
+                        <h4 class="skill-card__title">IA Generativa & OBS Studio</h4>
+                        <p class="skill-card__desc">Utilização estratégica de ferramentas de inteligência artificial
+                            para otimização de fluxos de trabalho e produção/gravação de mídia com OBS.</p>
+                    </div>
+
+                    <!-- COMPORTAMENTAIS -->
+                    <div class="skill-card" data-category="behavioral">
+                        <div class="skill-card__header">
+                            <i data-lucide="brain-circuit" class="skill-icon text-blue"></i>
+                            <span class="skill-level">Destaque</span>
+                        </div>
+                        <h4 class="skill-card__title">Pensamento Analítico & Resolução</h4>
+                        <p class="skill-card__desc">Capacidade de dissecar problemas complexos em etapas gerenciáveis,
+                            identificando a causa raiz e implementando soluções consistentes.</p>
+                    </div>
+
+                    <div class="skill-card" data-category="behavioral">
+                        <div class="skill-card__header">
+                            <i data-lucide="users" class="skill-icon text-blue"></i>
+                            <span class="skill-level">Destaque</span>
+                        </div>
+                        <h4 class="skill-card__title">Trabalho em Equipe & Comunicação</h4>
+                        <p class="skill-card__desc">Comunicação clara com diferentes públicos (acadêmico, técnico e
+                            usuários finais), oratória institucional e postura colaborativa.</p>
+                    </div>
+
+                    <div class="skill-card" data-category="behavioral">
+                        <div class="skill-card__header">
+                            <i data-lucide="compass" class="skill-icon text-blue"></i>
+                            <span class="skill-level">Destaque</span>
+                        </div>
+                        <h4 class="skill-card__title">Proatividade & Adaptabilidade</h4>
+                        <p class="skill-card__desc">Disposição contínua para aprender novas tecnologias e metodologias,
+                            integrando-se rapidamente a novos desafios e equipes.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ==================== PROJECTS SECTION ==================== -->
+        <section class="projects section" id="projects">
+            <div class="container">
+                <div class="section__header">
+                    <span class="section__subtitle">Portfólio Prático</span>
+                    <h2 class="section__title">Projetos</h2>
+                    <p class="section__description">
+                        Clique em qualquer projeto para abrir os detalhes completos: contexto de negócio, arquitetura
+                        técnica e resultados alcançados.
+                    </p>
+                </div>
+
+                <!-- Projects Filter (Apenas Acadêmicos e Pessoais) -->
+                <div class="projects__filters">
+                    <button class="project__filter-btn active" data-filter="all">Todos os Projetos</button>
+                    <button class="project__filter-btn" data-filter="academic">Projetos Acadêmicos</button>
+                    <button class="project__filter-btn" data-filter="personal">Projetos Pessoais</button>
+                </div>
+
+                <div class="projects__grid" id="projects-grid">
+                    <!-- 1. ACADÊMICO: SEGURANÇA DIGITAL PARA IDOSOS (IF SUDESTE MG) -->
+                    <article class="project-card" data-category="academic">
+                        <div class="project-card__visual" onclick="openSecurityDemoModal()"
+                            title="Clique para ver a explicação e acessar a demonstração">
+                            <span class="project-card__badge-category">Projeto Acadêmico</span>
+                            <span class="project-card__badge-status project-card__badge-status--completed">
+                                <span class="status-dot"></span> Finalizado
+                            </span>
+                            <div class="project-card__gallery" data-project="seguranca-digital-idosos">
+                                <img src="assets/img/projects/Seg1.jpeg" alt="Curso de Segurança Básica IF Sudeste MG"
+                                    class="gallery-img active">
+                                <img src="assets/img/projects/Seg2.jpeg"
+                                    alt="Aluna praticando no laboratório de informática" class="gallery-img">
+                                <img src="assets/img/projects/Seg3.jpeg"
+                                    alt="Questionário avaliativo de segurança digital" class="gallery-img">
+                            </div>
+                            <div class="gallery-indicators">
+                                <span class="gallery-dot active"></span>
+                                <span class="gallery-dot"></span>
+                                <span class="gallery-dot"></span>
+                            </div>
+                        </div>
+
+                        <div class="project-card__content">
+                            <h3 class="project-card__title">Segurança Digital para Idosos — Curso & Avaliativo Web</h3>
+                            <p class="project-card__desc">Plataforma web interativa desenvolvida para capacitar idosos
+                                no uso seguro da internet, ensinando de forma prática e acessível a identificar golpes
+                                virtuais, notícias falsas (fake news) e proteger dados pessoais.</p>
+
+                            <div class="project-card__tech">
+                                <span class="tech-tag">HTML5</span>
+                                <span class="tech-tag">CSS3</span>
+                                <span class="tech-tag">JavaScript</span>
+                                <span class="tech-tag">Acessibilidade Web</span>
+                                <span class="tech-tag">Inclusão Digital</span>
+                            </div>
+
+                            <div class="project-card__actions">
+                                <button type="button" class="btn btn--sm btn--primary" onclick="openSecurityDemoModal()"
+                                    aria-label="Ver Demonstração com Explicação Prévia">
+                                    <i data-lucide="external-link"></i> Ver Demonstração
+                                </button>
+                                <a href="https://github.com/LuanNevess/AvaliativoCSD" target="_blank"
+                                    rel="noopener noreferrer" class="btn btn--sm btn--code"
+                                    aria-label="Ver Repositório no GitHub">
+                                    <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"
+                                        aria-hidden="true">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" />
+                                    </svg>
+                                    GitHub
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- 2. PESSOAL 1: FIN (COM VÍDEO DE DEMONSTRAÇÃO E TELAS REAIS) -->
+                    <article class="project-card" data-category="personal">
+                        <div class="project-card__visual" onclick="openCaseStudy('fin-app')"
+                            title="Clique para assistir ao vídeo de demonstração">
+                            <span class="project-card__badge-category">Projeto Pessoal</span>
+                            <span class="project-card__badge-status project-card__badge-status--in-progress">
+                                <span class="status-dot"></span> Em Desenvolvimento
+                            </span>
+                            <div class="project-card__gallery" data-project="fin-app">
+                                <img src="assets/img/projects/fin-real-1.png" alt="Fin Controle Financeiro Tela Inicial"
+                                    class="gallery-img active">
+                                <img src="assets/img/projects/fin-real-2.png"
+                                    alt="Fin Controle Financeiro Extrato e Transações" class="gallery-img">
+                                <img src="assets/img/projects/fin-real-3.png"
+                                    alt="Fin Controle Financeiro Gráficos de Patrimônio" class="gallery-img">
+                            </div>
+                            <div class="gallery-indicators">
+                                <span class="gallery-dot active"></span>
+                                <span class="gallery-dot"></span>
+                                <span class="gallery-dot"></span>
+                            </div>
+                            <div class="project-card__play-badge">
+                                <i data-lucide="play"></i> <span>Vídeo Demo</span>
+                            </div>
+                        </div>
+
+                        <div class="project-card__content">
+                            <h3 class="project-card__title">Fin — Controle Financeiro Pessoal Android</h3>
+                            <p class="project-card__desc">Aplicativo nativo Android desenvolvido em Kotlin e Jetpack
+                                Compose com leitura automática de notificações bancárias, importador OFX, gráficos de
+                                patrimônio em Canvas e privacidade 100% offline.</p>
+
+                            <div class="project-card__tech">
+                                <span class="tech-tag">Kotlin</span>
+                                <span class="tech-tag">Jetpack Compose</span>
+                                <span class="tech-tag">Material 3</span>
+                                <span class="tech-tag">Canvas</span>
+                                <span class="tech-tag">MVVM</span>
+                                <span class="tech-tag">OFX Parser</span>
+                                <span class="tech-tag">Android</span>
+                            </div>
+
+                            <div class="project-card__actions">
+                                <button class="btn btn--sm btn--primary" onclick="openCaseStudy('fin-app')">
+                                    <i data-lucide="play-circle"></i> Assistir Demonstração
+                                </button>
+                                <span class="btn btn--sm btn--disabled" title="Download em fase de publicação">
+                                    <i data-lucide="download"></i> Em Breve
+                                </span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- 3. PESSOAL 2: MONITOR DE PROMOÇÕES & BOT WHATSAPP -->
+                    <article class="project-card" data-category="personal">
+                        <div class="project-card__visual" onclick="openCaseStudy('monitor-promocoes')"
+                            title="Clique para ver detalhes do projeto">
+                            <span class="project-card__badge-category">Projeto Pessoal</span>
+                            <span class="project-card__badge-status project-card__badge-status--in-progress">
+                                <span class="status-dot"></span> Em Desenvolvimento
+                            </span>
+                            <div class="project-card__gallery" data-project="monitor-promocoes">
+                                <img src="assets/img/projects/monitor-promo-1.svg"
+                                    alt="Monitor de Promoções e Bot WhatsApp Alertas" class="gallery-img active">
+                                <img src="assets/img/projects/monitor-promo-2.svg"
+                                    alt="Monitor de Promoções Arquitetura FastAPI e Scraping" class="gallery-img">
+                            </div>
+                            <div class="gallery-indicators">
+                                <span class="gallery-dot active"></span>
+                                <span class="gallery-dot"></span>
+                            </div>
+                        </div>
+
+                        <div class="project-card__content">
+                            <h3 class="project-card__title">Monitor de Promoções & Bot WhatsApp</h3>
+                            <p class="project-card__desc">Sistema inteligente em Python e FastAPI com Web Scraping
+                                assíncrono que monitora preços e ofertas em grandes e-commerces, valida cupons reais de
+                                desconto, compara concorrentes e dispara alertas automáticos diretamente no WhatsApp via
+                                webhooks.</p>
+
+                            <div class="project-card__tech">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">FastAPI</span>
+                                <span class="tech-tag">Web Scraping</span>
+                                <span class="tech-tag">WhatsApp Bot</span>
+                                <span class="tech-tag">Nodriver</span>
+                                <span class="tech-tag">APScheduler</span>
+                                <span class="tech-tag">SQLite</span>
+                            </div>
+
+                            <div class="project-card__actions">
+                                <button class="btn btn--sm btn--primary" onclick="openCaseStudy('monitor-promocoes')">
+                                    <i data-lucide="plus-circle"></i> Ver mais
+                                </button>
+                                <a href="https://github.com/LuanNevess/monitor-promocoes" target="_blank"
+                                    rel="noopener noreferrer" class="btn btn--sm btn--code"
+                                    aria-label="Ver Repositório no GitHub">
+                                    <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"
+                                        aria-hidden="true">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" />
+                                    </svg>
+                                    GitHub
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ==================== EDUCATION & TIMELINE ==================== -->
+        <section class="education section" id="education">
+            <div class="container">
+                <div class="section__header">
+                    <span class="section__subtitle">Trajetória Acadêmica</span>
+                    <h2 class="section__title">Formação Acadêmica & Qualificações</h2>
+                    <p class="section__description">
+                        Ensino superior no Instituto Federal do Sudeste de Minas Gerais e aperfeiçoamento contínuo em
+                        desenvolvimento de software.
+                    </p>
+                </div>
+
+                <div class="timeline__container">
+                    <!-- Graduação Principal -->
+                    <div class="timeline__item">
+                        <div class="timeline__marker">
+                            <i data-lucide="graduation-cap"></i>
+                        </div>
+                        <div class="timeline__content">
+                            <span class="timeline__date">2023 – Atual (Em andamento)</span>
+                            <h3 class="timeline__title">Bacharelado em Sistemas de Informação</h3>
+                            <h4 class="timeline__institution">Instituto Federal do Sudeste de Minas Gerais (IF Sudeste
+                                MG) — Campus Juiz de Fora</h4>
+                            <p class="timeline__desc">
+                                Graduação superior com sólida formação teórica e prática em Engenharia de Software,
+                                Algoritmos e Estruturas de Dados, Modelagem e Administração de Banco de Dados
+                                Relacional, Desenvolvimento Web (Frontend & Backend), Análise e Design de Sistemas e
+                                Governança de TI.
+                            </p>
+                            <div class="timeline__tags">
+                                <span class="timeline__tag">Sistemas de Informação</span>
+                                <span class="timeline__tag">IF Sudeste MG</span>
+                                <span class="timeline__tag">Engenharia de Software</span>
+                                <span class="timeline__tag">Banco de Dados</span>
+                                <span class="timeline__tag">Algoritmos</span>
+                                <span class="timeline__tag">Desenvolvimento Web</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Aperfeiçoamento Contínuo em Power BI -->
+                    <div class="timeline__item">
+                        <div class="timeline__marker">
+                            <i data-lucide="bar-chart-2"></i>
+                        </div>
+                        <div class="timeline__content">
+                            <span class="timeline__date">Aperfeiçoamento Contínuo</span>
+                            <h3 class="timeline__title">Aperfeiçoamento Contínuo em Power BI</h3>
+                            <h4 class="timeline__institution">Business Intelligence & Análise de Dados</h4>
+                            <p class="timeline__desc">
+                                Desenvolvimento e modelagem de relatórios interativos e dashboards executivos, aplicação de fórmulas e medidas em DAX, tratamento e modelagem com Power Query (ETL) e visualização de indicadores-chave de desempenho (KPIs) para apoio à tomada de decisão.
+                            </p>
+                            <div class="timeline__tags">
+                                <span class="timeline__tag">Power BI</span>
+                                <span class="timeline__tag">DAX</span>
+                                <span class="timeline__tag">Power Query</span>
+                                <span class="timeline__tag">Business Intelligence</span>
+                                <span class="timeline__tag">Dashboards</span>
+                                <span class="timeline__tag">KPIs</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Formação Complementar -->
+                    <div class="timeline__item">
+                        <div class="timeline__marker">
+                            <i data-lucide="award"></i>
+                        </div>
+                        <div class="timeline__content">
+                            <span class="timeline__date">Aperfeiçoamento Contínuo</span>
+                            <h3 class="timeline__title">Desenvolvimento de Software & Tecnologias Web</h3>
+                            <h4 class="timeline__institution">Cursos Práticos & Estudos Autônomos</h4>
+                            <p class="timeline__desc">
+                                Aprofundamento contínuo em JavaScript moderno (ES6+), Node.js, automações e scripts em
+                                Python, modelagem relacional com SQL, prototipagem de interfaces no Figma e fluxo
+                                profissional de versionamento com Git/GitHub.
+                            </p>
+                            <div class="timeline__tags">
+                                <span class="timeline__tag">JavaScript</span>
+                                <span class="timeline__tag">Node.js</span>
+                                <span class="timeline__tag">Python</span>
+                                <span class="timeline__tag">SQL</span>
+                                <span class="timeline__tag">Git & GitHub</span>
+                                <span class="timeline__tag">Figma</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ==================== CONTACT SECTION (CANAIS DIRETOS) ==================== -->
+        <section class="contact section" id="contact">
+            <div class="container">
+                <div class="section__header">
+                    <span class="section__subtitle">Vamos Conversar?</span>
+                    <h2 class="section__title">Canais de Contato & Currículo</h2>
+                    <p class="section__description">
+                        Estou disponível para oportunidades de <strong>estágio</strong> e desenvolvimento de software
+                        (web, backend e automações). Fale comigo diretamente ou baixe meu currículo completo em PDF:
+                    </p>
+                </div>
+
+                <div class="contact__container">
+                    <div class="contact__cards">
+                        <!-- Currículo Download Destaque -->
+                        <a href="assets/docs/curriculo.pdf" download="Curriculo_Luan_Neves.pdf" target="_blank"
+                            class="contact-card contact-card--highlight">
+                            <div class="contact-card__icon"><i data-lucide="file-down"></i></div>
+                            <div class="contact-card__info">
+                                <h4>Currículo Profissional</h4>
+                                <span class="contact-card__value">Curriculo_Luan_Neves.pdf (120 KB)</span>
+                                <span class="contact-card__action">Baixar currículo em PDF <i
+                                        data-lucide="download"></i></span>
+                            </div>
+                        </a>
+
+                        <!-- E-mail / Gmail -->
+                        <a href="mailto:luanvitor.neves0@gmail.com" class="contact-card">
+                            <div class="contact-card__icon">
+                                <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor" aria-hidden="true">
+                                    <path
+                                        d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z" />
+                                </svg>
+                            </div>
+                            <div class="contact-card__info">
+                                <h4>Gmail</h4>
+                                <span class="contact-card__value">luanvitor.neves0@gmail.com</span>
+                                <span class="contact-card__action">Enviar e-mail <i
+                                        data-lucide="arrow-right"></i></span>
+                            </div>
+                        </a>
+
+                        <!-- WhatsApp -->
+                        <a href="https://wa.me/5532998396201" target="_blank" rel="noopener noreferrer"
+                            class="contact-card">
+                            <div class="contact-card__icon">
+                                <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor" aria-hidden="true">
+                                    <path
+                                        d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+                                </svg>
+                            </div>
+                            <div class="contact-card__info">
+                                <h4>WhatsApp</h4>
+                                <span class="contact-card__value">(32) 99839-6201</span>
+                                <span class="contact-card__action">Iniciar conversa <i
+                                        data-lucide="arrow-right"></i></span>
+                            </div>
+                        </a>
+
+                        <!-- LinkedIn -->
+                        <a href="https://linkedin.com/in/luan-neves-700a7933a" target="_blank" rel="noopener noreferrer"
+                            class="contact-card">
+                            <div class="contact-card__icon">
+                                <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor" aria-hidden="true">
+                                    <path
+                                        d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9v8.37H9.2V10.9H6.46M7.83 6.45a1.64 1.64 0 1 0 0 3.28 1.64 1.64 0 0 0 0-3.28z" />
+                                </svg>
+                            </div>
+                            <div class="contact-card__info">
+                                <h4>LinkedIn</h4>
+                                <span class="contact-card__value">in/luan-neves-700a7933a</span>
+                                <span class="contact-card__action">Conectar no perfil <i
+                                        data-lucide="arrow-right"></i></span>
+                            </div>
+                        </a>
+
+                        <!-- GitHub -->
+                        <a href="https://github.com/LuanNevess" target="_blank" rel="noopener noreferrer"
+                            class="contact-card">
+                            <div class="contact-card__icon"><svg viewBox="0 0 24 24" width="24" height="24"
+                                    fill="currentColor" aria-hidden="true">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" />
+                                </svg></div>
+                            <div class="contact-card__info">
+                                <h4>GitHub</h4>
+                                <span class="contact-card__value">github.com/LuanNevess</span>
+                                <span class="contact-card__action">Ver repositórios <i
+                                        data-lucide="arrow-right"></i></span>
+                            </div>
+                        </a>
+
+                        <!-- Localização / Disponibilidade -->
+                        <div class="contact-card contact-card--static">
+                            <div class="contact-card__icon"><i data-lucide="map-pin"></i></div>
+                            <div class="contact-card__info">
+                                <h4>Localização & Disponibilidade</h4>
+                                <span class="contact-card__value">Juiz de Fora - MG</span>
+                                <span class="contact-card__badge"><span class="badge__dot"></span> Estágio • Remoto /
+                                    Híbrido / Presencial</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <!-- ==================== MODAL DE ESTUDO DE CASO (DETALHES DO PROJETO) ==================== -->
+    <div class="modal" id="project-modal">
+        <div class="modal__overlay" id="modal-overlay"></div>
+        <div class="modal__container">
+            <button class="modal__close" id="modal-close" aria-label="Fechar modal">
+                <i data-lucide="x"></i>
+            </button>
+
+            <div class="modal__body" id="modal-content">
+                <!-- Preenchido dinamicamente ao clicar em um projeto -->
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="footer">
+        <div class="container footer__container">
+            <div class="footer__brand">
+                <span class="logo__symbol">&lt;LN /&gt;</span>
+                <span class="footer__name">Luan Vitor Neves Gonçalves — Sistemas de Informação (IF Sudeste MG)</span>
+            </div>
+            <p class="footer__copy">
+                Construído com HTML5, CSS3 moderno & JavaScript. Portfólio pessoal e acadêmico.
+            </p>
+            <div class="footer__links">
+                <a href="#home">Voltar ao topo <i data-lucide="arrow-up"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/projects-data.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

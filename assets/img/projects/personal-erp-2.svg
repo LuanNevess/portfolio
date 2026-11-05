@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 360" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGradERP2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0c1326"/>
+      <stop offset="100%" stop-color="#141f3d"/>
+    </linearGradient>
+    <linearGradient id="gradEmerald" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#10b981"/>
+      <stop offset="100%" stop-color="#06b6d4"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="360" fill="url(#bgGradERP2)"/>
+  <rect x="20" y="20" width="560" height="320" rx="12" fill="#090d18" stroke="#1e293b" stroke-width="1.5"/>
+  
+  <rect x="20" y="20" width="560" height="40" rx="12" fill="#111827"/>
+  <circle cx="45" cy="40" r="5" fill="#ef4444"/>
+  <circle cx="62" cy="40" r="5" fill="#f59e0b"/>
+  <circle cx="79" cy="40" r="5" fill="#10b981"/>
+  <text x="110" y="44" fill="#94a3b8" font-family="monospace" font-size="12">app.inventory-erp.io/analytics • Métricas Operacionais</text>
+
+  <!-- Metric Panels -->
+  <g transform="translate(45, 80)">
+    <rect x="0" y="0" width="245" height="95" rx="8" fill="#111c33" stroke="#1e293b"/>
+    <text x="15" y="25" fill="#64748b" font-family="sans-serif" font-size="11">Volume de Pedidos (Hoje)</text>
+    <text x="15" y="60" fill="#f1f5f9" font-family="monospace" font-size="28" font-weight="bold">1.284</text>
+    <text x="15" y="82" fill="#10b981" font-family="sans-serif" font-size="11">↑ +18.4% vs média diária</text>
+
+    <rect x="265" y="0" width="245" height="95" rx="8" fill="#111c33" stroke="#1e293b"/>
+    <text x="280" y="25" fill="#64748b" font-family="sans-serif" font-size="11">Tempo Médio de Atendimento</text>
+    <text x="280" y="60" fill="#06b6d4" font-family="monospace" font-size="28" font-weight="bold">4m 12s</text>
+    <text x="280" y="82" fill="#10b981" font-family="sans-serif" font-size="11">↓ -35% pós-otimização</text>
+
+    <!-- Mini Chart -->
+    <rect x="0" y="110" width="510" height="120" rx="8" fill="#111c33" stroke="#1e293b"/>
+    <text x="15" y="132" fill="#94a3b8" font-family="sans-serif" font-size="11">Despacho de Pedidos por Hora</text>
+    
+    <path d="M 20,205 Q 80,180 140,195 T 260,150 T 380,135 T 490,140" fill="none" stroke="url(#gradEmerald)" stroke-width="3"/>
+    <circle cx="140" cy="195" r="4" fill="#06b6d4"/>
+    <circle cx="260" cy="150" r="4" fill="#10b981"/>
+    <circle cx="380" cy="135" r="4" fill="#10b981"/>
+    <circle cx="490" cy="140" r="4" fill="#06b6d4"/>
+  </g>
+</svg>

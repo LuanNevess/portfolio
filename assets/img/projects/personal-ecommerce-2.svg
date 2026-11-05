@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 360" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGradP2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a1220"/>
+      <stop offset="100%" stop-color="#111a30"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="360" fill="url(#bgGradP2)"/>
+  <rect x="20" y="20" width="560" height="320" rx="12" fill="#090e1a" stroke="#1e293b" stroke-width="1.5"/>
+  
+  <rect x="20" y="20" width="560" height="40" rx="12" fill="#111827"/>
+  <circle cx="45" cy="40" r="5" fill="#ef4444"/>
+  <circle cx="62" cy="40" r="5" fill="#f59e0b"/>
+  <circle cx="79" cy="40" r="5" fill="#10b981"/>
+  <text x="110" y="44" fill="#94a3b8" font-family="monospace" font-size="12">retention_cohort_matrix.py • N=42.000 clientes</text>
+
+  <!-- Heatmap Matrix -->
+  <g transform="translate(60, 85)">
+    <!-- Headers -->
+    <text x="70" y="20" fill="#64748b" font-family="monospace" font-size="11">Mês 0</text>
+    <text x="145" y="20" fill="#64748b" font-family="monospace" font-size="11">Mês 1</text>
+    <text x="220" y="20" fill="#64748b" font-family="monospace" font-size="11">Mês 2</text>
+    <text x="295" y="20" fill="#64748b" font-family="monospace" font-size="11">Mês 3</text>
+    <text x="370" y="20" fill="#64748b" font-family="monospace" font-size="11">Mês 4</text>
+    <text x="445" y="20" fill="#64748b" font-family="monospace" font-size="11">Mês 5</text>
+
+    <!-- Row 1: Jan -->
+    <text x="0" y="55" fill="#94a3b8" font-family="sans-serif" font-size="12">Jan</text>
+    <rect x="60" y="38" width="65" height="26" rx="4" fill="#10b981"/><text x="80" y="55" fill="#fff" font-family="monospace" font-size="11">100%</text>
+    <rect x="135" y="38" width="65" height="26" rx="4" fill="#059669"/><text x="155" y="55" fill="#fff" font-family="monospace" font-size="11">78%</text>
+    <rect x="210" y="38" width="65" height="26" rx="4" fill="#047857"/><text x="230" y="55" fill="#fff" font-family="monospace" font-size="11">65%</text>
+    <rect x="285" y="38" width="65" height="26" rx="4" fill="#065f46"/><text x="305" y="55" fill="#fff" font-family="monospace" font-size="11">54%</text>
+    <rect x="360" y="38" width="65" height="26" rx="4" fill="#064e3b"/><text x="380" y="55" fill="#fff" font-family="monospace" font-size="11">49%</text>
+    <rect x="435" y="38" width="65" height="26" rx="4" fill="#064e3b"/><text x="455" y="55" fill="#fff" font-family="monospace" font-size="11">46%</text>
+
+    <!-- Row 2: Fev -->
+    <text x="0" y="95" fill="#94a3b8" font-family="sans-serif" font-size="12">Fev</text>
+    <rect x="60" y="78" width="65" height="26" rx="4" fill="#10b981"/><text x="80" y="95" fill="#fff" font-family="monospace" font-size="11">100%</text>
+    <rect x="135" y="78" width="65" height="26" rx="4" fill="#059669"/><text x="155" y="95" fill="#fff" font-family="monospace" font-size="11">82%</text>
+    <rect x="210" y="78" width="65" height="26" rx="4" fill="#059669"/><text x="230" y="95" fill="#fff" font-family="monospace" font-size="11">71%</text>
+    <rect x="285" y="78" width="65" height="26" rx="4" fill="#047857"/><text x="305" y="95" fill="#fff" font-family="monospace" font-size="11">59%</text>
+    <rect x="360" y="78" width="65" height="26" rx="4" fill="#065f46"/><text x="380" y="95" fill="#fff" font-family="monospace" font-size="11">52%</text>
+
+    <!-- Row 3: Mar -->
+    <text x="0" y="135" fill="#94a3b8" font-family="sans-serif" font-size="12">Mar</text>
+    <rect x="60" y="118" width="65" height="26" rx="4" fill="#10b981"/><text x="80" y="135" fill="#fff" font-family="monospace" font-size="11">100%</text>
+    <rect x="135" y="118" width="65" height="26" rx="4" fill="#10b981"/><text x="155" y="135" fill="#fff" font-family="monospace" font-size="11">85%</text>
+    <rect x="210" y="118" width="65" height="26" rx="4" fill="#059669"/><text x="230" y="135" fill="#fff" font-family="monospace" font-size="11">76%</text>
+    <rect x="285" y="118" width="65" height="26" rx="4" fill="#047857"/><text x="305" y="135" fill="#fff" font-family="monospace" font-size="11">63%</text>
+
+    <!-- Row 4: Abr -->
+    <text x="0" y="175" fill="#94a3b8" font-family="sans-serif" font-size="12">Abr</text>
+    <rect x="60" y="158" width="65" height="26" rx="4" fill="#10b981"/><text x="80" y="175" fill="#fff" font-family="monospace" font-size="11">100%</text>
+    <rect x="135" y="158" width="65" height="26" rx="4" fill="#10b981"/><text x="155" y="175" fill="#fff" font-family="monospace" font-size="11">89%</text>
+    <rect x="210" y="158" width="65" height="26" rx="4" fill="#059669"/><text x="230" y="175" fill="#fff" font-family="monospace" font-size="11">81%</text>
+  </g>
+  <rect x="60" y="295" width="480" height="28" rx="6" fill="#131e36"/>
+  <text x="75" y="314" fill="#06b6d4" font-family="sans-serif" font-size="11">↑ Melhoria de +14% na retenção mês 1 após reformulação do onboarding</text>
+</svg>

@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 360" width="100%" height="100%">
+  <defs>
+    <linearGradient id="finBg1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a1324"/>
+      <stop offset="100%" stop-color="#121e36"/>
+    </linearGradient>
+    <linearGradient id="finCircleGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10b981"/>
+      <stop offset="100%" stop-color="#06b6d4"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="360" fill="url(#finBg1)"/>
+  <rect x="20" y="20" width="560" height="320" rx="12" fill="#0b101d" stroke="#1e293b" stroke-width="1.5"/>
+
+  <!-- Top bar -->
+  <rect x="20" y="20" width="560" height="40" rx="12" fill="#111827"/>
+  <circle cx="45" cy="40" r="5" fill="#ef4444"/>
+  <circle cx="62" cy="40" r="5" fill="#f59e0b"/>
+  <circle cx="79" cy="40" r="5" fill="#10b981"/>
+  <text x="110" y="44" fill="#94a3b8" font-family="monospace" font-size="12">Fin • Gestão Financeira Pessoal (Kotlin + Compose)</text>
+
+  <!-- Left: Mobile Mockup Preview -->
+  <g transform="translate(60, 75)">
+    <!-- Phone frame -->
+    <rect x="0" y="0" width="160" height="245" rx="18" fill="#131c31" stroke="#334155" stroke-width="2"/>
+    <rect x="40" y="6" width="80" height="10" rx="5" fill="#0f172a"/>
+
+    <!-- Spending Circle -->
+    <circle cx="80" cy="95" r="50" fill="none" stroke="#1e293b" stroke-width="10"/>
+    <circle cx="80" cy="95" r="50" fill="none" stroke="url(#finCircleGrad)" stroke-width="10" stroke-dasharray="314" stroke-dashoffset="95" stroke-linecap="round"/>
+    
+    <text x="80" y="90" text-anchor="middle" fill="#64748b" font-family="sans-serif" font-size="9">DISPONÍVEL</text>
+    <text x="80" y="106" text-anchor="middle" fill="#10b981" font-family="monospace" font-size="14" font-weight="bold">R$ 1.840</text>
+
+    <!-- Mini summary -->
+    <rect x="15" y="165" width="130" height="30" rx="6" fill="#1e293b"/>
+    <text x="25" y="178" fill="#94a3b8" font-family="sans-serif" font-size="8">Entrou no mês:</text>
+    <text x="25" y="190" fill="#f1f5f9" font-family="monospace" font-size="9" font-weight="bold">R$ 4.500 + R$ 138</text>
+
+    <rect x="15" y="202" width="130" height="30" rx="6" fill="#1e293b"/>
+    <text x="25" y="215" fill="#94a3b8" font-family="sans-serif" font-size="8">Caixinhas &amp; Aportes:</text>
+    <text x="25" y="227" fill="#06b6d4" font-family="monospace" font-size="9" font-weight="bold">R$ 1.200 (Patrimônio)</text>
+  </g>
+
+  <!-- Right: Technical Highlights -->
+  <g transform="translate(260, 85)">
+    <rect x="0" y="0" width="300" height="58" rx="8" fill="#131e36" stroke="#1e293b"/>
+    <text x="15" y="24" fill="#06b6d4" font-family="sans-serif" font-size="12" font-weight="bold">🔔 Leitura Automática de Notificações</text>
+    <text x="15" y="44" fill="#94a3b8" font-family="sans-serif" font-size="10">Captura em tempo real via NotificationListenerService</text>
+
+    <rect x="0" y="70" width="300" height="58" rx="8" fill="#131e36" stroke="#1e293b"/>
+    <text x="15" y="94" fill="#10b981" font-family="sans-serif" font-size="12" font-weight="bold">📂 Importação de Extratos (.OFX)</text>
+    <text x="15" y="114" fill="#94a3b8" font-family="sans-serif" font-size="10">Parser SGML/XML nativo com de-duplicação inteligente</text>
+
+    <rect x="0" y="140" width="300" height="58" rx="8" fill="#131e36" stroke="#1e293b"/>
+    <text x="15" y="164" fill="#3b82f6" font-family="sans-serif" font-size="12" font-weight="bold">🔒 100% Offline &amp; Seguro</text>
+    <text x="15" y="184" fill="#94a3b8" font-family="sans-serif" font-size="10">Privacidade total: dados salvos localmente sem servidores</text>
+
+    <!-- Play video hint pill -->
+    <rect x="0" y="210" width="300" height="28" rx="14" fill="rgba(6, 182, 212, 0.15)" stroke="rgba(6, 182, 212, 0.4)"/>
+    <text x="150" y="228" text-anchor="middle" fill="#06b6d4" font-family="sans-serif" font-size="11" font-weight="bold">▶ Clique no projeto para assistir ao Vídeo de Demonstração</text>
+  </g>
+</svg>

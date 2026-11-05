@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 360" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGradPromo1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a1224"/>
+      <stop offset="100%" stop-color="#0f1f2e"/>
+    </linearGradient>
+    <linearGradient id="userBubble" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#056162"/>
+      <stop offset="100%" stop-color="#075e54"/>
+    </linearGradient>
+    <linearGradient id="botBubble" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1f2c34"/>
+      <stop offset="100%" stop-color="#182229"/>
+    </linearGradient>
+    <filter id="shadowPromo" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000" flood-opacity="0.4"/>
+    </filter>
+  </defs>
+
+  <rect width="600" height="360" fill="url(#bgGradPromo1)"/>
+
+  <!-- Phone/Chat Frame -->
+  <rect x="25" y="16" width="550" height="328" rx="14" fill="#111b21" stroke="#22323f" stroke-width="1.5" filter="url(#shadowPromo)"/>
+
+  <!-- Header -->
+  <rect x="25" y="16" width="550" height="48" rx="14" fill="#202c33"/>
+  <rect x="25" y="50" width="550" height="14" fill="#202c33"/>
+  <circle cx="56" cy="40" r="16" fill="#00a884"/>
+  <!-- Bot Icon -->
+  <path d="M50 36 h12 v8 h-12 z M48 39 h2 M62 39 h2 M56 31 v5" stroke="#ffffff" stroke-width="1.8" stroke-linecap="round" fill="none"/>
+  <text x="82" y="38" fill="#e9edef" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600">Monitor de Promoções Bot</text>
+  <text x="82" y="51" fill="#00a884" font-family="sans-serif" font-size="10" font-weight="500">● online • monitorando 5 grandes lojas</text>
+  
+  <!-- Right status badge -->
+  <rect x="445" y="28" width="115" height="24" rx="12" fill="rgba(6, 182, 212, 0.15)" stroke="rgba(6, 182, 212, 0.35)" stroke-width="1"/>
+  <text x="460" y="44" fill="#38bdf8" font-family="monospace" font-size="10" font-weight="600">Evolution API</text>
+
+  <!-- Chat Area -->
+  <g transform="translate(45, 76)">
+    <!-- User Message -->
+    <rect x="230" y="0" width="280" height="42" rx="10" fill="url(#userBubble)"/>
+    <text x="242" y="18" fill="#e9edef" font-family="sans-serif" font-size="11">https://nike.com.br/air-max-90</text>
+    <text x="242" y="33" fill="#8696a0" font-family="sans-serif" font-size="9.5">Me avise quando baixar de R$ 500!</text>
+    <text x="475" y="34" fill="#8696a0" font-family="sans-serif" font-size="8.5">14:20 ✓✓</text>
+
+    <!-- Bot Response Message -->
+    <rect x="0" y="52" width="410" height="195" rx="10" fill="url(#botBubble)" stroke="#2a3942" stroke-width="1"/>
+    
+    <!-- Bot Message Content -->
+    <text x="16" y="74" fill="#25d366" font-family="sans-serif" font-size="12" font-weight="bold">🚨 ALERTA DE PREÇO BAIXO DETECTADO!</text>
+    <text x="16" y="94" fill="#e9edef" font-family="sans-serif" font-size="11.5" font-weight="600">Tênis Nike Air Max 90 Masculino</text>
+    
+    <!-- Price Comparison Box -->
+    <rect x="16" y="104" width="378" height="68" rx="6" fill="#111b21" stroke="#22323f" stroke-width="1"/>
+    <text x="28" y="123" fill="#8696a0" font-family="sans-serif" font-size="10">🏆 Menor Preço:</text>
+    <text x="125" y="123" fill="#38bdf8" font-family="sans-serif" font-size="12" font-weight="bold">R$ 449,10</text>
+    <text x="200" y="123" fill="#8696a0" font-family="sans-serif" font-size="9.5">(Centauro)</text>
+    <rect x="295" y="112" width="88" height="16" rx="8" fill="rgba(37, 211, 102, 0.2)"/>
+    <text x="303" y="124" fill="#25d366" font-family="sans-serif" font-size="9" font-weight="bold">-28% OFF</text>
+
+    <text x="28" y="142" fill="#8696a0" font-family="sans-serif" font-size="10">🎟️ Cupom Válido:</text>
+    <text x="125" y="142" fill="#e9edef" font-family="monospace" font-size="11" font-weight="bold">CORRE10</text>
+    <text x="200" y="142" fill="#22c55e" font-family="sans-serif" font-size="9.5">✓ Testado &amp; Ativo</text>
+
+    <text x="28" y="160" fill="#8696a0" font-family="sans-serif" font-size="9.5">Outras Lojas: Nike R$ 599,99 • Netshoes R$ 519,90</text>
+
+    <!-- Historical note -->
+    <text x="16" y="190" fill="#cbd5e1" font-family="sans-serif" font-size="10.5">📊 Menor preço registrado nos últimos 90 dias!</text>
+    <text x="16" y="206" fill="#00a884" font-family="sans-serif" font-size="10" font-weight="bold">🔗 Link com desconto enviado no WhatsApp</text>
+    <text x="365" y="240" fill="#8696a0" font-family="sans-serif" font-size="8.5">14:20</text>
+  </g>
+</svg>
